@@ -120,11 +120,11 @@ The `type()` function is used to display the data type of a value or a variable.
 ### User Inputs
 
 - This function allows us to read a line from input (inside terminal). 
-
 - It could show a prompt so the user is actually asked something. 
 
-- The prompt is set as the argument the input function recieves. If there is no argument sent, there is not gonna be any prompt in the terminal. 
+> "A prompt is text or symbols used to represent the system's readiness to perform the next [command](https://www.computerhope.com/jargon/c/command.htm)." - [Computer Hope](https://www.computerhope.com/jargon/p/prompt.htm).
 
+- The prompt is set as the argument the input function recieves. If there is no argument sent, there is not gonna be any prompt in the terminal. 
 - The input it recieves is ALWAYS converted into a string and finally returned. 
 
 It works as the example below:
@@ -209,7 +209,7 @@ my_array = [element_1, element_2, element_3, 'Hello', False]
 - **Slice:** To slice an array, you can use the following notation: `[ starting_slice : ending_slice : jump ]`. So, for example if you want to slice an array from the start to the element in index number 5, and you want every 2 elements, you can write `my_array[:5:2]`.
 - **Length:** To get the length of an array, use the `len()` function and pass the array as a parameter. Example: `len(my_array)`.
 
-Aside from those uses of arrays, they have some methods shich can be found on the [Official Python Docs](https://docs.python.org/3/library/array.html). The most important ones are:
+Aside from those uses of arrays, they have some methods which can be found on the [Official Python Docs](https://docs.python.org/3/library/array.html). The most important ones are:
 
 - **Append:** Add an element at the end of the array.
 - **Insert:** Inserts an element at any index of the array.
@@ -219,7 +219,7 @@ Aside from those uses of arrays, they have some methods shich can be found on th
 
 **Definition:** Strings are basically **UNMUTABLE** lists, and as so, they have some of the previously seen properties, like indexation and slicing. Since strings are unmutable, when you want to make a change to a string, you must create a new and different one.
 
-In addition to those, `Strings` have special methods than can be used following the next example: <string>.<method>(<values>)
+In addition to those, `Strings` have special methods that can be used following the next example: <string>.<method>(<values>)
 
 The special String methods can be found in the [Official Python Docs](https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str), subsection 'String methods'.
 
