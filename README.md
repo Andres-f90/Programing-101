@@ -63,21 +63,25 @@ Now that you created an environment, it's time to prepare for the coding session
 1. Anaconda Navigator: This is the [Official Conda Guide](https://docs.anaconda.org/anaconda/navigator/tutorials/manage-packages/) to manage packages.
 2. CMD: This is the [Official Conda Guide](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-pkgs.html) to manage packages with `conda`.
 
-## Running a Python Script
 
-### IDLE
+
+
+
+## First Steps
+
+### Running a Python Script
+
+#### IDLE
 
 djkldjd
 
-### Visual Studio Code (VSCode)
+#### Visual Studio Code (VSCode)
 
 hjdkd
 
-### Jupyter Notebooks
+#### Jupyter Notebooks
 
-[getting started with anaconda](https://anaconda.cloud/tutorials/getting-started-with-anaconda-individual-edition%3Fsource%3Dosx_installer)
-
-## First Steps
+[getting started with anaconda](https://anaconda.cloud/tutorials/getting-started-with-anaconda-individual-edition%3Fsource%3Dosx_installer) 
 
 ### Print Statement
 
@@ -138,6 +142,10 @@ What is your favorite number? 5
 
 (Information obtained from the [Python Official Documentation](https://docs.python.org/3/library/functions.html#input)).
 
+### Comentaries
+
+
+
 ## Variables
 
 ### Variables vs. Values
@@ -182,7 +190,7 @@ to change s
 
 *Example:*  4.4
 
-## Complex Types of Variables
+## Collections
 
 ### Arrays
 
@@ -278,6 +286,37 @@ Function: name assigned to a process o sequence of specified instructions
 variables rules
     only can begging with an letter  like a or A
     only alphanumerical and _
+
+functions are created to do certain tasks faster and with less lines so is easier to not bug and to debug
+
+```python
+def <function_name>():
+```
+
+
+
+### Call a function
+
+the function is called to use the code inside it, it's called like 
+
+```python
+<function_name>()
+```
+
+parameter: this one is used to be into the function, also can be used in the body of the function, can be one or more parameters in the function
+
+argument: this one is to tell the the parameter what to do like it is a value and the parameter an variable
+
+```python
+def operating_marth(x,y):
+operating_math(5*90)
+```
+
+the up code show us how to do something inside the function, the numbers will be organized like the order we put them in the function
+
+### Recursion
+
+
 
 ## Expressions
 
@@ -381,7 +420,21 @@ updated automatically
     for <key> in <diccionary>.values()
     for <keys>,<value> in <diccionary>.items()
 
+iteration: is the way to call the process of doing some specific instructions in code
+
 ### `while` loops
+
+Is used for when we don't know how many times the loop must do a iteration  
+
+## Exceptions
+
+### Errors
+
+
+
+## Files
+
+### Import 
 
 
 
@@ -393,6 +446,8 @@ Documentation to find important things for Python such as built-in functions
     -python docs
     -menu para español y su versión
     funciones built-in
+
+
 
 ##  Additional questions
 
