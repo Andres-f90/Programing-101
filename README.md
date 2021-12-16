@@ -119,13 +119,24 @@ The `type()` function is used to display the data type of a value or a variable.
 
 ### User Inputs
 
-​		Get data of the users
-​    input(). It allows us to ask for the user to give us a data
-​    <var> = input(<message: >)
-​    input always returns/give us strings
-​    int 'hugging' with parenthesis will change it for int
+- This function allows us to read a line from input (inside terminal). 
 
-example: int (input()):
+- It could show a prompt so the user is actually asked something. 
+
+- The prompt is set as the argument the input function recieves. If there is no argument sent, there is not gonna be any prompt in the terminal. 
+
+- The input it recieves is ALWAYS converted into a string and finally returned. 
+
+It works as the example below:
+
+```shell
+>>> fav_number = input('What is your favorite number? ')
+What is your favorite number? 5
+>>> fav_number
+"5"
+```
+
+(Information obtained from the [Python Official Documentation](https://docs.python.org/3/library/functions.html#input)).
 
 ## Variables
 
@@ -175,75 +186,44 @@ to change s
 
 ### Arrays
 
-**Definition:** This variable is used to have inside more variales even it self
+**Definition:** Arrays are a **MUTABLE** kind of variable, which can store multiple objects inside it, organized by indexes.
 
-*Example:*  v_list = [4.4, 16, v_list2=['hello'], false]
+> Mutable means it can be later modified.
 
-Lists start indexing from number 0.
+- An array can contain objects, which can be of every kind.
+- An array can also contain objects created before.
+- It stores elements in sequence.
 
-Indexation
+In the example below, we have an array called `my_array` that was created with three elements created before and 2 elements (a string and a boolean) created inside it:
 
-can access to this index with
-    <str>[<index>]
- slicing (for strings)
-    <string>[index for start slicing , index for finish slicing]
-    python[1:4] we  stop in the next index we want to stop
-    <python>[start : end : jump]
-   **example:** <python>[1:6:2]
+```
+element_1 = 4.4 # float
+element_2 = 5 # int
+element_3 = [6, 4, 7] # array
 
-- `len(list)`: Returns the length of the list.
+my_array = [element_1, element_2, element_3, 'Hello', False]
+```
 
-    It's a data structure that storage many values on sequence
-    (used for lists)
-    index begins from zero, can have any type of data
-    mutable = can be modified
-    Access an element of the list
-        <list>[index]
-    Add an element
-        ~<list>.append(<elem>)
-        ~<list>.insert(<index>,<elem>)
-    Remover un elemento
-        <list>.remove(<elem>)
-    Find an element in the list
-        <elem> in <list>
-    .index(<elem>)para el indice
-        <list>.index(<elem>)
-    Change an  element
-        <list>[<índex>] = <new_value>
-    Methodology of the list
-        mutual operations of the lists
-        <list>.<method>(<parameters>)
-        .count(<elem>)
-    
-    ​    .extend(<list>)
-    
-    ​    .pop()
-    
-    ​    .reverse()
-    
-    ​    .sort()
+- **Indexation:** An array index it's elements starting from number `0`. It is specially useful to know because some problems began when you think the first element is the element number 1.
+- **Acces:** To acces any item in an array, you need it's index. For example, you can write `my_array[0]` to acces the first element
+- **Slice:** To slice an array, you can use the following notation: `[ starting_slice : ending_slice : jump ]`. So, for example if you want to slice an array from the start to the element in index number 5, and you want every 2 elements, you can write `my_array[:5:2]`.
+- **Length:** To get the length of an array, use the `len()` function and pass the array as a parameter. Example: `len(my_array)`.
+
+Aside from those uses of arrays, they have some methods shich can be found on the [Official Python Docs](https://docs.python.org/3/library/array.html). The most important ones are:
+
+- **Append:** Add an element at the end of the array.
+- **Insert:** Inserts an element at any index of the array.
+- **Pop:** Removes the last element and then returns it.
 
 ### String
 
-Strings are basically lists, and as so, they have all the previously seen properties (indexation and slicing).
+**Definition:** Strings are basically **UNMUTABLE** lists, and as so, they have some of the previously seen properties, like indexation and slicing. Since strings are unmutable, when you want to make a change to a string, you must create a new and different one.
 
-In addition to those, `Strings` have special methods than can be used following the next example: <cadena>.<method>(<values>)
+In addition to those, `Strings` have special methods than can be used following the next example: <string>.<method>(<values>)
 
- Some of the special String methods are:
+The special String methods can be found in the [Official Python Docs](https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str), subsection 'String methods'.
 
-- `my_string.capitalize()`: The method capitalize djsh
-- `my_string.find(to_find)`: This method finds if the value of `to_find` is inside `my_string`
-- .isdigit
-- .index
-- .islower
-- isalnum
-- .isupper
-- .isalpha
-- .lower
-- .isdecimal
-- .upper
-
-> If it begins with "is" probably would be True/False
+> If it begins with "is" probably is True/False
 
 ### Tuples
 
